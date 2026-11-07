@@ -49,7 +49,7 @@ Open `hardware/easyeda/water-monitor.epro` with EasyEDA Pro to inspect the schem
 
 ### Field photos
 <table><tr>
-<td align="center" width="50%"><img src="docs/img/photos/01-enclosure-open.jpg" width="320" alt="Open enclosure with electronics and wiring"><br><sub>Open enclosure with electronics and wiring</sub></td>
+
 </tr></table>
 
 ### Credits
