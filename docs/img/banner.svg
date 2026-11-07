@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="Groundwater Monitor PCB Redesign">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#13233f"/></linearGradient>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity=".04"/></pattern>
+<radialGradient id="glow" cx=".85" cy=".5" r=".45"><stop offset="0" stop-color="#38bdf8" stop-opacity=".22"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1280" height="320" rx="20" fill="url(#bg)"/>
+<rect width="1280" height="320" rx="20" fill="url(#grid)"/>
+<rect width="1280" height="320" rx="20" fill="url(#glow)"/>
+<rect x="64" y="58" width="56" height="5" rx="2.5" fill="#38bdf8"/>
+<g font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif">
+<text x="64" y="128" font-size="46" font-weight="700" fill="#f8fafc">Groundwater Monitor PCB Redesign</text>
+<text x="64" y="176" font-size="21" fill="#94a3b8">EasyEDA Pro redesign of an autonomous IoT water-level and conductivity monitor</text>
+<rect x="64" y="232" width="128" height="34" rx="17" fill="#38bdf8" fill-opacity=".12" stroke="#38bdf8" stroke-opacity=".55"/><text x="128" y="255" font-size="16" fill="#e2e8f0" text-anchor="middle">EasyEDA Pro</text><rect x="203.6" y="232" width="70" height="34" rx="17" fill="#38bdf8" fill-opacity=".12" stroke="#38bdf8" stroke-opacity=".55"/><text x="239" y="255" font-size="16" fill="#e2e8f0" text-anchor="middle">ESP32</text><rect x="285.6" y="232" width="99" height="34" rx="17" fill="#38bdf8" fill-opacity=".12" stroke="#38bdf8" stroke-opacity=".55"/><text x="335" y="255" font-size="16" fill="#e2e8f0" text-anchor="middle">PSoC 5LP</text><rect x="396.40000000000003" y="232" width="51" height="34" rx="17" fill="#38bdf8" fill-opacity=".12" stroke="#38bdf8" stroke-opacity=".55"/><text x="422" y="255" font-size="16" fill="#e2e8f0" text-anchor="middle">PCB</text>
+</g>
+<g transform="translate(980 40)" stroke="#38bdf8" fill="#38bdf8" stroke-linecap="round" font-family="Segoe UI, Arial, sans-serif"><circle cx="120" cy="120" r="20"/><g stroke-width="3"><path d="M120 120 L45 50 M120 120 L200 55 M120 120 L40 190 M120 120 L205 185 M120 120 L120 25"/></g><circle cx="45" cy="50" r="11" fill="none" stroke-width="4"/><circle cx="200" cy="55" r="11" fill="none" stroke-width="4"/><circle cx="40" cy="190" r="11" fill="none" stroke-width="4"/><circle cx="205" cy="185" r="11" fill="none" stroke-width="4"/><circle cx="120" cy="25" r="11" fill="none" stroke-width="4"/></g>
+</svg>
