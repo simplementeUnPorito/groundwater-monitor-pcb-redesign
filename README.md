@@ -26,7 +26,7 @@ Taken from the parts and net names of the EasyEDA schematic (`Medidor_de_Nivel_S
 | Screw terminals and headers | Field wiring (12 V, GND, sensor and signal connectors) |
 
 ### PCB renders
-Previews generated from the EasyEDA Pro `.epcb` files with [`easyeda_render.py`](../_shared/easyeda_render.py) (`pro-pcb-routed` mode): board outline, top (red) and bottom (blue) copper, vias, pads, copper pours and top silkscreen. They are not CAM-accurate Gerber output.
+Previews generated from the EasyEDA Pro `.epcb` files with a small Python renderer: board outline, top (red) and bottom (blue) copper, vias, pads, copper pours and top silkscreen. They are not CAM-accurate Gerber output.
 
 <table><tr>
 <td align="center" width="50%"><img src="hardware/pcb/pcb-elias-main-board.png" width="440" alt="Board ELIAS, routed, with top and bottom ground pours"><br><sub><b>ELIAS</b>: routed two-layer board with top and bottom ground pours</sub></td>
