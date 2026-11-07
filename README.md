@@ -64,21 +64,55 @@ MIT, see [LICENSE](LICENSE).
 ## Español
 
 ### Descripción general
-Rediseño de PCB de un monitor IoT autónomo de nivel freático y conductividad del agua, desarrollado por **Nicolás Escurra** (tutor: **Enrique A. Vargas Cabral, PhD**, FCT – Universidad Católica "Nuestra Señora de la Asunción"). **La contribución de Elías** son las placas portadora/principal rediseñadas en EasyEDA Pro, realizadas a pedido del tutor. El monitor en sí (su firmware y método de medición) no forma parte de este repositorio.
+Rediseño de PCB de un monitor IoT autónomo de nivel freático y conductividad del agua, desarrollado por **Nicolás Escurra** (asesor: **Enrique A. Vargas Cabral, PhD**, FCT, Universidad Católica "Nuestra Señora de la Asunción"). **La contribución de Elías** son las placas portadora/principal rediseñadas en EasyEDA Pro, realizadas a pedido del asesor. El monitor en sí (su firmware y método de medición) no forma parte de este repositorio.
+
+<p align="center"><img src="docs/img/field-enclosure.jpg" width="640" alt="Gabinete de campo del monitor de aguas subterráneas"><br><sub>Gabinete de campo del monitor (2025)</sub></p>
 
 ### Qué conecta la placa
-Según las piezas y los nombres de red del esquemático de EasyEDA (`Medidor_de_Nivel_SMD`): ESP32-DevKitC y CY8CKIT-059 (PSoC 5LP) montados sobre los cabezales de la placa, regulador LM7805 desde la entrada de 12 V, conversor bidireccional de niveles lógicos (3,3 V / 5 V), entradas `TDS_DATA` (sensor TDS) y `DS18B20_DATA` (temperatura), líneas `BAT_LEVEL` (nivel de batería) y `PIN_WAKEUP` (despertar), y bornes y cabezales para el cableado de campo.
+Según las piezas y los nombres de red del esquemático de EasyEDA (`Medidor_de_Nivel_SMD`):
+
+| Elemento | Función en la placa |
+|------|-------------------|
+| ESP32-DevKitC | Montado sobre los cabezales de la placa portadora |
+| CY8CKIT-059 (PSoC 5LP) | Montado sobre los cabezales de la placa portadora |
+| LM7805D2TRG | Regulador de 5 V alimentado desde la entrada de 12 V |
+| Conversor bidireccional de niveles | Interfaz entre los dominios de 3,3 V y 5 V |
+| `TDS_DATA` | Entrada para el módulo sensor TDS (conductividad) |
+| `DS18B20_DATA` | Entrada para el sensor de temperatura DS18B20 |
+| `BAT_LEVEL` | Línea de medición del nivel de batería |
+| `PIN_WAKEUP` | Línea de activación |
+| Bornes y cabezales | Cableado de campo (12 V, GND, conectores de sensores y señales) |
 
 ### Renders de PCB
-Ver la tabla en la sección en inglés: ELIAS (placa ruteada con planos de masa superior e inferior), ELIAS_1 (variante parcialmente ruteada), NICO_ (layout ruteado con plano de masa) y NICO_SIN_PLANO_DE_TIERRA (mismo ruteo sin plano de masa). El proyecto no registra cuál layout fue el primero. Las imágenes son vistas previas, no salida Gerber.
+Vistas previas generadas desde los archivos `.epcb` de EasyEDA Pro mediante un pequeño renderizador en Python: contorno de placa, cobre superior (rojo) e inferior (azul), vías, pads, vertidos de cobre y serigrafía superior. No son salidas Gerber con precisión CAM.
 
-### Estructura
-- `hardware/easyeda/water-monitor.epro`: proyecto de EasyEDA Pro (3 esquemáticos, 6 documentos PCB).
-- `hardware/pcb/`: vistas previas de las placas.
+<table><tr>
+<td align="center" width="50%"><img src="hardware/pcb/pcb-elias-main-board.png" width="440" alt="Placa ELIAS, ruteada, con planos de masa superior e inferior"><br><sub><b>ELIAS</b>: placa ruteada de dos capas con planos de masa superior e inferior</sub></td>
+<td align="center" width="50%"><img src="hardware/pcb/pcb-elias-1-partial-routing.png" width="440" alt="Placa ELIAS_1, ruteo parcial de la capa superior"><br><sub><b>ELIAS_1</b>: variante parcialmente ruteada (solo pistas de cobre superior, sin contorno de placa en el archivo)</sub></td>
+</tr><tr>
+<td align="center" width="50%"><img src="hardware/pcb/pcb-nico-ground-pour.png" width="440" alt="Placa NICO_, ruteada, con plano de masa"><br><sub><b>NICO_</b>: layout ruteado con plano de masa</sub></td>
+<td align="center" width="50%"><img src="hardware/pcb/pcb-nico-no-ground-plane.png" width="440" alt="Placa NICO_SIN_PLANO_DE_TIERRA, ruteada, sin plano de masa"><br><sub><b>NICO_SIN_PLANO_DE_TIERRA</b>: mismo ruteo que NICO_, sin el plano de masa</sub></td>
+</tr></table>
+
+Los archivos del proyecto no registran qué layout se creó primero, por lo que las placas se describen según sus nombres en el archivo.
+
+### Estructura del repositorio
+```
+hardware/
+  easyeda/water-monitor.epro   Proyecto EasyEDA Pro (3 esquemáticos, 6 documentos PCB)
+  pcb/                         Vistas previas renderizadas y lista de placas
+docs/img/                      Banner, foto del gabinete de campo y fotos del montaje
+```
+Abrir `hardware/easyeda/water-monitor.epro` con EasyEDA Pro para inspeccionar los esquemáticos y las placas.
+
+### Fotos de campo
+<table><tr>
+
+</tr></table>
 
 ### Créditos
-- **Monitor de aguas subterráneas** (concepto, firmware y método de medición): desarrollado por **Nicolás Escurra**, tutorizado por **Enrique A. Vargas Cabral, PhD** (FCT – Universidad Católica "Nuestra Señora de la Asunción").
-- **Rediseño de PCB** (placas portadora/principal en EasyEDA Pro): **Elías Álvarez**, a pedido del tutor. Elías no trabajó en el código del monitor.
+- **Monitor de aguas subterráneas** (concepto, firmware y método de medición): desarrollado por **Nicolás Escurra**, con asesoría de **Enrique A. Vargas Cabral, PhD** (FCT, Universidad Católica "Nuestra Señora de la Asunción").
+- **Rediseño de PCB** (placas portadora/principal en EasyEDA Pro): **Elías Álvarez**, a pedido del asesor. Elías no trabajó en el código del monitor.
 
 ### Licencia
 MIT, ver [LICENSE](LICENSE).
