@@ -49,7 +49,7 @@ Open `hardware/easyeda/water-monitor.epro` with EasyEDA Pro to inspect the schem
 
 ### Field photos
 <table><tr>
-<td align="center" width="50%"><img src="docs/img/photos/01-enclosure-open.jpg" width="320" alt="Open enclosure with electronics and wiring"><br><sub>Open enclosure with electronics and wiring</sub></td><td align="center" width="50%"><img src="docs/img/photos/02-esp32-node.jpg" width="320" alt="ESP32 node mounted inside the enclosure"><br><sub>ESP32 node mounted inside the enclosure</sub></td>
+<td align="center" width="50%"><img src="docs/img/photos/01-enclosure-open.jpg" width="320" alt="Open enclosure with electronics and wiring"><br><sub>Open enclosure with electronics and wiring</sub></td>
 </tr></table>
 
 ### Credits
