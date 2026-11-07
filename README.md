@@ -1,6 +1,6 @@
 <p align="center"><img src="docs/img/banner.svg" width="100%" alt="Groundwater Monitor: PCB Redesign"></p>
 
-<p align="center"><img src="https://img.shields.io/badge/EasyEDA-Pro-informational"> <img src="https://img.shields.io/badge/PCB-redesign-1f6feb"> <img src="https://img.shields.io/badge/ESP32-DevKitC-e7352c"> <img src="https://img.shields.io/badge/PSoC-5LP-1f6feb"> <img src="https://img.shields.io/badge/License-MIT-lightgrey"></p>
+<p align="center"><img src="https://img.shields.io/badge/Year-2025-555"> <img src="https://img.shields.io/badge/EasyEDA-Pro-informational"> <img src="https://img.shields.io/badge/PCB-redesign-1f6feb"> <img src="https://img.shields.io/badge/ESP32-DevKitC-e7352c"> <img src="https://img.shields.io/badge/PSoC-5LP-1f6feb"> <img src="https://img.shields.io/badge/License-MIT-lightgrey"></p>
 <p align="center"><a href="#english">English</a> · <a href="#español">Español</a></p>
 
 ## English
